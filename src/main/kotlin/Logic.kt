@@ -15,13 +15,13 @@ class Logic {
         println(" Kertas ")
 
         println("Masukkan Pilihan Pemain 1 : ")
-        val playerOne = readLine()!!
+        val playerOne = readLine()!!.toUpperCase()
         println("Masukkan Pilihan Pemain 2 : ")
-        val playerTwo = readLine()!!
+        val playerTwo = readLine()!!.toUpperCase()
         println("RESULTS : ")
 
 
-        if (playerOne.equals(playerTwo)) {
+        if (playerOne == playerTwo) {
             hasil = "DRAW!"
         } else if (playerOne == "batu" && playerTwo == "gunting" || playerOne == "gunting" && playerTwo == "kertas" ||
             playerOne == "kertas" && playerTwo == "batu"
